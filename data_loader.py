@@ -1,14 +1,8 @@
 import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, mean_absolute_percentage_error
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor
 import matplotlib.pyplot as plt
 
 # Load data
-data = pd.read_csv('D:\LTCTTNT\pka-ai-programming-final\dataset\train_1.csv')
+data = pd.read_csv('./dataset/train_1.csv')
 print(data.head())
 
 data = data.head(3)
