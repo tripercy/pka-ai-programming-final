@@ -11,3 +11,18 @@ def load_dataset() -> pd.DataFrame:
     data_long['Date'] = pd.to_datetime(data_long['Date'])
 
     return data_long
+
+def load_random_page(seed: int = 42) -> pd.DataFrame:
+    data = pd.read_csv('./dataset/train_1.csv.zip', compression="zip")
+    random_page = data.sample(random_state=seed)
+    return random_page
+
+def load_page(index: int) -> pd.DataFrame:
+    data = pd.read_csv('./dataset/train_1.csv.zip', compression="zip")
+    page = data.iloc[index]
+    return page
+
+def load_page_by_name(page_name: str) -> pd.DataFrame:
+    data = pd.read_csv('./dataset/train_1.csv.zip', compression="zip")
+    page = data[data['Page'] == page_name]
+    return page
