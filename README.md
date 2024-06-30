@@ -1,4 +1,5 @@
 # pka-ai-programming-final
+This repo is archived because the course had finished. Feel free to use it as a learning and reference source.
 
 # Pre-requisites
 - Python 3.9 or higher.
